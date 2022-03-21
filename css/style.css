@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+:root {
+
+    --ff-primary: 'Lexend Deca', sans-serif;
+    --ff-secondary: 'Big Shoulders Display', monospace;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+
+    --clr-background-main: hsl(233, 47%, 7%);
+    --clr-card-background: hsl(244, 38%, 16%);
+    --clr--accent:  hsl(277, 64%, 61%);
+
+
+    --clr-heading: hsl(0, 0%, 100%);
+    --clr-main-par: hsla(0, 0%, 100%, 0.75);
+    --clr-stat-head: hsla(0, 0%, 100%, 0.6);
+    
+}
+
+span {
+    color: var(--clr--accent);
+        font-size: 1.875rem;
+}
+
+a { 
+        text-decoration: none;
+        font-size: 12px;
+        font-family: var(--ff-primary);
+        color: hsl(277, 64%, 61%); 
+}
+
+.container {
+    background-color: var(--clr-background-main);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 70vw;
+    background-color: var(--clr-card-background);
+    display: flex;
+    border-radius: 7px;
+}
+
+
+.card-intro h1 {
+    font-size: 1.875rem;
+    font-weight: 900;
+    font-family: var(--ff-primary);
+    color: var(--clr-heading);
+    margin-bottom: 1.5rem;
+}
+
+.card-intro p {
+    font-size: 0.875rem;
+    font-family: var(--ff-secondary);
+    color: var(--clr-main-par);
+}
+
+.card-intro {
+    padding: 3rem 4rem;
+    width: 50%;
+}
+
+.data {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.data h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: var(--ff-primary);
+    color: var(--clr-heading);
+    margin-top: 5.5rem;
+    margin-right: 4.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.data p {
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-family: var(--ff-secondary);
+    color: var(--clr-main-par);
+    text-transform: uppercase;
+}
+
+.card-img {
+    width: 50%;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, hsl(277, 64%, 61%, 0.35) 0%, hsl(277, 64%, 61%, 0.35) 100%), url('../images/image-header-desktop.jpg');
+    background-position: center;
+    background-repeat:  no repeat;
+    background-size: cover;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+    .attribution {
+     font-size: 11px; 
+     text-align: center; 
+     background: var(--clr-background-main);
+     color: hsla(0, 0%, 100%, 0.75)
+}
+
+
+    @media (max-width: 400px) {
+
+        .card {
+            width: 80%;
+            height: 80%;
+            background-color: var(--clr-card-background);
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 7px;
+        }
+
+    .card-intro {
+        width: 100%;
+        height: 70%;
+        padding: 2rem 3rem;
+        text-align: center;
+}
+
+.card-intro h1 {
+    font-size: 1.5rem;
+
+    margin-bottom: 1rem;
+}
+
+.card-intro p {
+    font-size: 0.875rem;
+
+}
+.data h2 {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-top: 2rem;
+    margin-left: 4.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.data p {
+    font-size: 0.65rem;
+    font-weight: 300;
+    font-family: var(--ff-primary);
+    color: var(--clr-main-par);
+    text-transform: uppercase;
+}
+
+    .data {
+        flex-direction: column;
+}
+
+    .card-img {
+        width: 100%;
+        height: 30%;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, hsl(277, 64%, 61%, 0.35) 0%, hsl(277, 64%, 61%, 0.35) 100%), url('../images/image-header-desktop.jpg');
+    background-position: center;
+    background-repeat:  no repeat;
+    background-size: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 0px;
+    }
